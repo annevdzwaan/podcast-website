@@ -1,2 +1,379 @@
-p {front-size: 1.2em;}
-p {colar : red}
+
+body {
+    color : #FE95FE;
+    background : #0A0A60;
+    font-family: 'tahoma', sans-serif;
+}
+ 
+h1 {
+    color : #FE95FE;
+    margin: 0.625em;  
+    padding: 2px;
+    border: 2px solid #D3F526;
+    text-align: center; 
+    border-radius: 0.75em;
+    font-size: 3em;
+}
+
+h2 {
+    color: #0A0A60;
+    border: 2px solid #0A0A60;
+    border-radius: 0.75em;
+    background-color: #D2C6FF;
+    text-align: center;
+}
+
+/*navigatiebalk*/
+nav ul {
+    font-size: 1em;
+    background-color: #D2C6FF; 
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border: 2px solid #D3F526 ;
+    border-radius: 0.75em;
+    padding: 0.5em;
+    font-family: 'tahoma', sans-serif;
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.625em 1.25em;
+    background-color: #D2C6FF;
+    color: #0A0A60;
+    border: 2px solid #0A0A60;
+    border-radius: 0.75em; 
+    font-size: 0.81em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover {
+    background-color:#0A0A60;
+    border-radius: 0.75em;
+    transform: scale(1.1);
+    color: #D3F526; 
+}
+
+nav a:active {
+    color: #0A0A60;
+    background-color:#D3F526;
+}
+
+/*aanwezigheid op de pagina in de nav ul*/
+.aanwezig {
+    background-color: #0A0A60;
+    color: #D3F526;
+}
+
+/*abonneer knop*/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25em; /* Ruimte tussen de links */
+    margin: 0;
+    padding: 0;
+}
+
+.abonneer {
+    padding: 0.625em 1.25em;
+    background-color: #D3F526;
+    color: #0A0A60;
+    border: 2px solid #0A0A60;
+    border-radius: 0.75em; 
+    font-size: 0.81em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.abonneer:hover {
+    background-color: #FE95FE;
+    color: #D3F526; 
+    border-radius: 0.75em;
+}
+
+/*main*/
+main img { 
+    width: 70em;
+    justify-content: space-evenly;
+}
+
+main {
+    border: 1em solid #0A0A60;
+    padding: 1em;
+    color:#0A0A60; 
+    text-align: center;
+    margin: 4em;
+}
+
+.logo {
+    background-color: #D2C6FF;
+    padding: 0.625em;
+    margin: 3.1em;
+    border-radius: 0.75em;
+}
+
+.introductie {
+    background-color: #D2C6FF;
+    padding: 0.625em;
+    margin: 3.1em;
+    border-radius: 0.75em;
+}
+
+.introductie p {
+    text-align: left;
+}
+
+/*video yt*/
+.video {
+    background-color: #D2C6FF;
+    padding: 0.625em;
+    margin: 3.1em;
+    border-radius: 0.75em;
+}
+
+.youtube {
+    height: 19.7em;
+    width: 35em;
+}
+
+/*start popup*/
+.popup {
+    display: none; /* Verborgen totdat het doel wordt geactiveerd */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Donkere achtergrond van */
+}
+
+/* Popup-inhoud */
+.popup-content {
+    color: #0A0A60;
+    background-color: #D3F526;
+    margin: 15% auto;
+    padding: 1.25em;
+    width: 50%;
+    border-radius: 0.625em;
+    text-align: center;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+p strong {
+    color: #FE95FE;
+}
+
+/* Sluitknop (X) */
+.close-btn {
+    position: absolute;
+    top: 0.625em;
+    right: 1.25em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FE95FE;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #D3F526;
+}
+
+/* Wanneer het anker (#popup) in de URL is, toon de popup */
+:target {
+    display: block;
+}
+
+.kortingscode-link {
+    color: #FE95FE;
+    background-color: #D3F526;
+    padding: 0.625em;
+    border: 2px solid #D2C6FF;
+    border-radius: 0.75em;
+    
+}
+/*einde popup*/
+
+/*over ons*/ 
+.overons h2 {
+    text-size-adjust: 0.625em;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    color:#D3F526;
+    background-color: #0A0A60;
+    padding: 0.625em;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 0.3em;
+    text-align: center; 
+}
+
+.overons {
+    background-color: #D2C6FF;
+    padding: 1.25em;
+    margin: 3.1em;
+    border-radius: 0.75em;
+}
+
+.persoonlijk {
+    display: flex; 
+    padding: 1.25em;
+    margin: 3.1em;
+    border-radius: 0.75em;
+    text-align: left;
+    background-color: #D2C6FF;
+}
+
+.overons p {
+    text-align: left;
+}
+
+/*afleveringen*/
+.afleveringen {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em; 
+    margin: 0; 
+}
+
+.aflevering {
+    color: #FE95FE;
+    display: flex; 
+    gap: 1.9em; /* ruimte tussen de thumbnail en de tekst */
+    padding: 1.9em;
+    text-align: left;
+}
+
+.aflevering img { /* Thumbnail */
+    max-height: 9.4em; 
+    width: auto; 
+}
+
+.aflevering div { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.aflevering h3 {
+    background-color: #0A0A60;
+    color: #D3F526;
+    text-align: left;
+    padding: 0; 
+    margin: 0; 
+}
+
+.duur { /* Tijd van de afleveringen */
+    color: #D3F526;
+}
+
+
+button { /*meer afleveringen*/
+    padding: 0.625em 1.25em;
+    background-color: #D3F526;
+    color: #0A0A60;
+    border: 2px solid #0A0A60;
+    border-radius: 0.75em; 
+    font-size: 1.25em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+button:hover {
+    background-color: #FE95FE;
+    border-radius: 0.75em;
+    transform: scale(1.2);
+}
+
+button:active {
+    color: #0A0A60;
+    background-color:#D3F526;
+}
+
+/*contact*/
+.contact {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 0.625em;
+    background-color: #0A0A60;
+    width: 100%;
+    margin: 3.1em;
+} 
+
+.contact h3 {
+    color: #0A0A60;
+    border: 2px solid #D3F526; 
+    background-color: #D2C6FF;
+    border-radius: 0.75em; 
+    padding: 0.625em 1.25em; 
+    flex: 1; 
+    text-align: left; 
+    margin-bottom: 0%;
+    margin-right: 7em;
+    margin-left: 1.5em;
+}
+
+.bericht {
+    color: #0A0A60;
+    border: 2px solid #D3F526;
+    background-color: #D2C6FF;
+    border-radius: 0.75em; 
+    padding: 1.25em;
+    margin: 0; 
+    width: calc(100% - 200px); /* breedte van de balk */
+    text-align: left;
+    height: 12.5em;
+    margin-top: 0%;
+}
+
+/*knop verstuur*/
+.verstuur {
+    justify-content: right;
+    flex-direction: row;
+    text-align: right;
+    float: right;
+    margin-right: 3.5em;
+    margin-top: 1.25em;
+}
+
+/*footer*/
+footer ul {
+    color: #0A0A60;
+    background-color: #D2C6FF; 
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border: 2px solid #D3F526;
+    border-radius: 0.75em;
+    padding: 0.9em;
+    transition: all 350ms ease; 
+}
+
+footer ul li:hover {
+    background-color:#FE95FE;
+    border-radius: 0.75em;
+    padding: 0.3;
+}
+
+ul li:active {
+    color: #0A0A60;
+    background-color:#D3F526;
+}
+
+footer p {
+    color: #0A0A60;
+    background-color: #D2C6FF;
+    padding: 0.4em;
+    height: 6.25em;
+    justify-content: center;
+    text-align: center;
+}
+/*einde footer*/
+
+
