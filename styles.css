@@ -200,7 +200,6 @@ p strong {
 
 /*over ons*/ 
 .overons h2 {
-    text-size-adjust: 0.625em;
     text-align: center;
     width: 100%;
 }
@@ -358,7 +357,7 @@ footer ul {
 footer ul li:hover {
     background-color:#FE95FE;
     border-radius: 0.75em;
-    padding: 0.3;
+    padding: 0.3em;
 }
 
 ul li:active {
